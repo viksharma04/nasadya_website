@@ -17,7 +17,7 @@
   
 body {
     background-color: var(--prim-color);
-    background-image: url(https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-image: url(https://images.unsplash.com/photo-1487875961445-47a00398c267?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
     background-size: cover;
     font-family: "Lato", sans-serif;
     color: var(--dark-color);
@@ -59,26 +59,40 @@ ul{
 /* MAIN */
 
 .main-wrapper{
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: center;
     height: 20em;
 }
 
-.main-container{
+.statement-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.logo{
-    width: 200px;
-    height: 200px;
-    padding: 20px 20px;
 }
 
 .statement{
     color: var(--prim-color);
     font-family: 'Courgette', cursive;
     font-weight: lighter ;
+}
+
+.story-container{
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.story-container p{
+  padding: 20px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--prim-color);
+}
+
+.gulati-img{
+ max-height: 50%;
+ width: auto;
 }
