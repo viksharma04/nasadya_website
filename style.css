@@ -18,8 +18,8 @@
 body {
     font-family: "Lato", sans-serif;
     color: var(--dark-color);
-    background-image: url(https://images.unsplash.com/photo-1467579424161-6bbc141569d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); 
-    background-color: transparent;
+    /* background-image: url(https://images.unsplash.com/photo-1467579424161-6bbc141569d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);  */
+    background-color: white;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ ul{
 .navbar-wrapper{
     overflow: hidden;
     background-color: transparent;
-    background-color: rgb(237, 245, 250);
+    background-color: var(--grey-color);
     padding: 5px 5px;
     position: fixed;
     top: 0;
@@ -43,9 +43,6 @@ ul{
     width: 100%;
   }
 
-.navbar-wrapper:hover{
-  background-color: white;
-}
 
 .navbar-container{
       display: flex;
@@ -74,12 +71,12 @@ ul{
       font-size: 20px;
       text-decoration: none;
       text-align: center;
-      transition: 0.5s ease-in;
+      transition: 0.3s;
   }
 
 .navbar-container a:hover{
-  background-color: var(--yellow-color);
-  color: var(--dark-color);
+  background-color: var(--blue-color);
+  color: var(--prim-color);
   border-radius: 5px;
 }
 
@@ -100,41 +97,18 @@ ul{
 /* MAIN */
 
 .main-wrapper{
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  margin-top: 100px;
+}
+
+.m-container{
   display: flex;
   flex-direction: column;
-  justify-content: top;
   align-items: center;
-  padding-top: 120px;
-  min-height: 600px;
+  height: 300px;
 }
 
-.mission-container{
-  background-color: rgba(12, 50, 110, 0.5);
-  max-width: 600px;
-  padding: 20px 20px ;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  transition: 0.5s ease-in;
-  color: var(--prim-color);
-}
-
-.mission-container:hover{
-  background-color: var(--blue-color);
-}
-
-.story-container{
-  background-color: rgba(12, 50, 110, 0.5);
-  max-width: 600px;
-  padding: 20px 20px ;
-  border-radius: 8px;
-  margin-top: 10px;
-  transition: 0.5s ease-in;
-  color: var(--prim-color);
-}
-
-.story-container:hover{
-  background-color: var(--blue-color);
-}
 
 /* Footer */
 .footer{
