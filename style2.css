@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+
+:root{
+    --prim-color: #FFFFFF;
+    --dark-color: #02020A;
+    --blue-color: #0C326E;
+    --yellow-color:#E99F0C;
+    --grey-color: #DFDFE2;
+  }
+  
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+body {
+    font-family: 'Belleza', sans-serif;
+    color: var(--dark-color);
+    /* background-image: url(https://images.unsplash.com/photo-1467579424161-6bbc141569d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);  */
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+ul{
+      list-style-type: none;
+      display: flex;
+  }
+
+/* Header section */
+
+.header{
+  background-image: url("https://images.pexels.com/photos/1556704/pexels-photo-1556704.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+}
+
+.navbar a{
+  float: left;
+  color: var(--prim-color);
+  font-weight: bold;
+  padding: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.logo{
+  object-fit: contain;
+}
+
+/* Stack & Technology */
+
+.bus-thesis{
+  padding: 90px 90px;
+  width: 60%;
+  font-size: 70px;
+  color: #FFFFFF;
+}
+
+.technology{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack-img{
+  justify-content: center;
+  align-items: center;
+  padding: 80px 70px;
+}
+
+.stack-img img{
+  width: 400px;
+}
+
+.tech-points{
+  color: var(--dark-color);
+}
+
+/* Interest Banner */
+
+.interest-banner{
+  background-color: var(--yellow-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  
+}
+
+.interest-banner h1{
+  font-size: 50px;
+}
+
+.interest-banner h3{
+  padding-bottom: 20px;
+}
+
+.contact-btn{
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: black;
+  border: black 2px solid;
+  border-radius: 5px;
+}
+
+.contact-btn:hover{
+  background-color: white;
+  transform: scale(0.95);
+}
+
+/* Credibility Section */
+
+
+
+/* Footer */
+.footer{
+  background-color: var(--blue-color);
+  padding: 20px 20px ;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--prim-color);
+}
+
+.footer-container a{
+  color: var(--prim-color);
+  padding: 10px;
+}
+
