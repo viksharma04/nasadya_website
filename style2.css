@@ -53,20 +53,24 @@ ul{
   float: left;
   color: var(--prim-color);
   font-weight: bold;
-  padding: 0 10px;
+  padding: 10px 10px;
   font-size: 20px;
   text-decoration: none;
   text-align: center;
   transition: 0.3s;
+  border-radius: 2px;
+}
+
+.navbar a:hover{
+  background-color: white;
+  border-radius: 5px;
+  color: #02020A;
+  transition: 0.3s ease-in;
 }
 
 .logo{
   object-fit: contain;
 }
-
-
-
-/* Stack & Technology */
 
 .bus-thesis{
   padding: 90px 90px;
@@ -74,6 +78,10 @@ ul{
   font-size: 70px;
   color: #FFFFFF;
 }
+
+/* Stack & Technology */
+
+
 
 .technology{
   display: grid;
@@ -100,11 +108,11 @@ ul{
 
 .interest-banner{
   background-color: var(--yellow-color);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  padding: 20px 20px;
   
 }
 
@@ -116,14 +124,20 @@ ul{
   padding-bottom: 20px;
 }
 
+.interest-banner a{
+  justify-self: center;
+}
+
 .contact-btn{
   display: inline-block;
-  padding: 10px 30px;
+  padding: 10px 10px;
   cursor: pointer;
   background-color: var(--primary-color);
   color: black;
   border: black 2px solid;
   border-radius: 5px;
+  width: 150px;
+  text-align: center;
 }
 
 .contact-btn:hover{
@@ -198,8 +212,30 @@ ul{
     width: 175px;
   }
 
-  .navbar ul{
+  .navbar a{
     padding-top: 10px;
+  }
+
+  .technology{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .stack-img img{
+    width: 300px;
+  }
+
+  .stack-img{
+    padding: 40px 20px;
+  }
+
+  .interest-banner{
+    padding: 20px 20px;
+  }
+
+  .card-container{
+    display: flex;
+    flex-direction: column;
   }
 
 }
