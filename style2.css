@@ -64,6 +64,8 @@ ul{
   object-fit: contain;
 }
 
+
+
 /* Stack & Technology */
 
 .bus-thesis{
@@ -107,7 +109,7 @@ ul{
 }
 
 .interest-banner h1{
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .interest-banner h3{
@@ -131,7 +133,36 @@ ul{
 
 /* Credibility Section */
 
+.cred{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  background-color: var(--grey-color);
+}
 
+.cred h1{
+  font-size: 40px;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  grid-gap: 10px;
+}
+
+.card-container .card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 /* Footer */
 .footer{
@@ -151,3 +182,24 @@ ul{
   padding: 10px;
 }
 
+/* Mobile */
+@media(max-width: 768px){
+
+  .header{
+    height: auto;
+  }
+
+  .bus-thesis{
+    font-size: 2em;
+    padding: 1.2em 1.2em;
+  }
+
+  .logo{
+    width: 175px;
+  }
+
+  .navbar ul{
+    padding-top: 10px;
+  }
+
+}
