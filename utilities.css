@@ -37,7 +37,7 @@ h3, p, i{
     background-color: #fff;
     color: #333;
     border-radius: 10px;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2); */
     padding: 20px;
     margin: 10px;
     transition: 0.5s;
@@ -45,11 +45,11 @@ h3, p, i{
 }
 
 .card:hover{
-    transform: translateY(-5px);
-    transform: scale(1.05);
+    transform: translateY(5px);
+    transform: scale(1.01);
     /* height: 20px; */
     /* width: 40px; */
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); */
 }
 
 /* Button */

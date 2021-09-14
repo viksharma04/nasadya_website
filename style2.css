@@ -8,6 +8,7 @@
     --dark-color: #02020A;
     --blue-color: #0C326E;
     --yellow-color:#E99F0C;
+    --yellow-color-two:#e9b651;
     --grey-color: #DFDFE2;
   }
   
@@ -39,6 +40,9 @@ ul{
   background-size: cover;
   background-position: center;
   height: 550px;
+  position: sticky;
+  top: 10px;
+  z-index: -1;
 }
 
 .navbar{
@@ -47,6 +51,12 @@ ul{
   justify-content: space-between;
   width: 100%;
   height: 70px;
+  position: sticky;
+  top:0;
+  background-color: black;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+
 }
 
 .navbar a{
@@ -88,6 +98,7 @@ ul{
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .stack-img{
@@ -107,13 +118,12 @@ ul{
 /* Interest Banner */
 
 .interest-banner{
-  background-color: var(--yellow-color);
+  background-color: var(--yellow-color-two);
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px;
-  
+  padding: 20px 20px; 
 }
 
 .interest-banner h1{
@@ -180,7 +190,7 @@ ul{
 
 /* Footer */
 .footer{
-  background-color: var(--blue-color);
+  background-color: black;
   padding: 20px 20px ;
 }
 
