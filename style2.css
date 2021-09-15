@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 
 :root{
@@ -10,6 +11,7 @@
     --yellow-color:#E99F0C;
     --yellow-color-two:#e9b651;
     --grey-color: #DFDFE2;
+    --grey-color2:rgba(223, 223, 226, 0.719);
   }
   
 * {
@@ -19,13 +21,14 @@
   }
   
 body {
-    font-family: 'Belleza', sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: var(--dark-color);
     /* background-image: url(https://images.unsplash.com/photo-1467579424161-6bbc141569d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);  */
     background-color: white;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: left;
   }
 
 ul{
@@ -33,6 +36,9 @@ ul{
       display: flex;
   }
 
+  a{
+    text-decoration: none;
+  }
 /* Header section */
 
 .header{
@@ -92,13 +98,16 @@ ul{
 /* Stack & Technology */
 
 
-
 .technology{
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
   background-color: white;
+}
+
+.technology ul{
+  padding: 5px 5px;
 }
 
 .stack-img{
@@ -115,23 +124,32 @@ ul{
   color: var(--dark-color);
 }
 
+.tech-points h1{
+  font-size: 30px;
+}
+
 /* Interest Banner */
 
 .interest-banner{
   background-color: var(--yellow-color-two);
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px; 
+  padding: 10px 10px; 
 }
 
 .interest-banner h1{
-  font-size: 40px;
+  font-size: 45px;
+  font-weight: bold;
 }
 
 .interest-banner h3{
   padding-bottom: 20px;
+}
+
+.interest-banner a{
+  padding: 20px;
 }
 
 .interest-banner a{
@@ -166,7 +184,7 @@ ul{
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 40px;
-  background-color: var(--grey-color);
+  background-color: var(--prim-color);
 }
 
 .cred h1{
@@ -179,6 +197,15 @@ ul{
   grid-template-rows: 1fr 1fr;
   width: 100%;
   grid-gap: 10px;
+}
+
+.card-container img{
+  width: 100px;
+  height: 100px;
+}
+
+.four img, .three img{
+  width: 200px;
 }
 
 .card-container .card{
