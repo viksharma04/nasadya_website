@@ -28,7 +28,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    text-align: left;
+    text-align: center;
   }
 
 ul{
@@ -40,16 +40,6 @@ ul{
     text-decoration: none;
   }
 /* Header section */
-
-.header{
-  background-image: url("https://images.pexels.com/photos/1556704/pexels-photo-1556704.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  position: sticky;
-  top: 10px;
-  z-index: -1;
-}
 
 .navbar{
   display: flex;
@@ -89,10 +79,23 @@ ul{
   object-fit: contain;
 }
 
+.header{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background-image: url("https://images.pexels.com/photos/1556704/pexels-photo-1556704.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: sticky;
+  top: 10px;
+  z-index: -1;
+}
+
 .bus-thesis{
   padding: 90px 90px;
   width: 60%;
-  font-size: 70px;
+  font-size: 60px;
   color: #FFFFFF;
 }
 
@@ -108,13 +111,13 @@ ul{
 }
 
 .main-heading{
-  font-size: 40px;
-  padding: 20px 20px;
+  font-size: 30px;
+  padding: 20px 40px;
 }
 
 .our-tech{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   grid-gap: 20px;
@@ -142,8 +145,17 @@ ul{
   color: var(--dark-color);
 }
 
+.tech-points h3{
+  font-size: 25px;
+}
+
 .p1, .p2, .p3{
   width: 100%;
+}
+
+.points{
+  display: flex;
+  flex-direction: row;
 }
 
 /* Interest Banner */
@@ -224,9 +236,51 @@ ul{
   height: 100px;
 }
 
-.four img, .three img{
-  width: 200px;
+/* .one, .two, .three, .four, .five, .six{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  padding: 0 0;
+} */
+
+.one img{
+  width: 150px;
+  height: 150px;
 }
+
+.two img{
+  width: 150px;
+  height: 150px;
+}
+
+.three img{
+  width: 250px;
+  height: auto;
+  padding-top: 25px;
+}
+
+.four img{
+  width: auto;
+  height: 150px;
+}
+
+.five img{
+  height: 150px;
+  width: 150px;
+}
+
+.six img{
+  padding-top: 20px;
+  width: auto;
+  height: 100px;
+}
+
+.six h2{
+  padding-top: 50px;
+}
+
 
 .card-container .card{
   display: flex;
