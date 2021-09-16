@@ -110,9 +110,33 @@ ul{
   background-color: white;
 }
 
+
+.about-heading{
+  padding: 20px 20px;
+  margin-right: auto;
+  transition: ease-in;
+}
+
+.about-heading a{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  transition: ease-in;
+}
+
+.about-heading a:hover{
+  color: white;
+}
+
+.about-heading:hover{
+  border: 1px black solid;
+  background-color: black;
+}
+
 .main-heading{
-  font-size: 30px;
+  font-size: 40px;
   padding: 20px 40px;
+  font-weight: bolder;
 }
 
 .main-heading sub{
@@ -147,8 +171,25 @@ ul{
   object-fit: cover;
 }
 
+.problem{
+  background-color: var(--blue-color);
+  color: white;
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.problem p{
+  font-size: 20px;
+  padding: 20px 80px;
+}
+
 .tech-points{
   color: var(--dark-color);
+  padding: 80px 20px;
+}
+
+.icon{
+  padding: 30px 30px;
 }
 
 .tech-points h3{
@@ -158,6 +199,7 @@ ul{
 .p1, .p2, .p3{
   width: 100%;
 }
+
 
 .points{
   display: flex;
@@ -278,13 +320,12 @@ ul{
 }
 
 .six img{
-  padding-top: 20px;
   width: auto;
   height: 100px;
 }
 
 .six h2{
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 
@@ -316,10 +357,13 @@ ul{
 /* Mobile */
 @media(max-width: 768px){
 
+  .main-heading{
+    padding-top: 30px;
+  }
+
   .header{
     max-height: 300px;
   }
-
 
   .bus-thesis{
     font-size: inherit;
@@ -332,6 +376,7 @@ ul{
 
   .navbar a{
     padding-top: 10px;
+    font-size: 10px;
   }
 
   .technology{
@@ -341,9 +386,22 @@ ul{
     flex-direction: column;
   }
 
-  .main-heading{
-    padding-top: 10px;
-    padding: 0 0;
+  .about-heading{
+    display: none;
+  }
+
+  .points{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .problem p{
+    padding: 20px 30px;
+  }
+
+  .stack-img img{
+    width: inherit;
+    height: auto;
   }
 
   .stack-img img{
