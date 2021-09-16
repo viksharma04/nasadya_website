@@ -45,7 +45,7 @@ ul{
   background-image: url("https://images.pexels.com/photos/1556704/pexels-photo-1556704.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-size: cover;
   background-position: center;
-  height: 550px;
+  height: 100vh;
   position: sticky;
   top: 10px;
   z-index: -1;
@@ -149,7 +149,8 @@ ul{
 /* Interest Banner */
 
 .interest-banner{
-  background-color: var(--yellow-color-two);
+  background-color: var(--blue-color);
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -179,8 +180,8 @@ ul{
   padding: 10px 10px;
   cursor: pointer;
   background-color: var(--primary-color);
-  color: black;
-  border: black 2px solid;
+  color: white;
+  border: white 2px solid;
   border-radius: 5px;
   width: 150px;
   text-align: center;
@@ -188,6 +189,7 @@ ul{
 
 .contact-btn:hover{
   background-color: white;
+  color: black;
   transform: scale(0.95);
 }
 
